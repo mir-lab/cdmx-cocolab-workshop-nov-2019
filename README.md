@@ -30,28 +30,32 @@ Before we meet there are a few things to make sure youâ€™ve got in place. Hereâ€
 
 ## Schedule
 
-### Day 1 - General Topic
+### Day 1 - Shared State Management
 Time | Topic
 ---- | ----
-10:00 | Place holder
-11:00 | Place holder
-12:00 | Place holder
-13:00 | Place holder
-14:00 | Place holder
-15:00 | Place holder
-16:00 | Place holder
+10:00 | Context, Approach, and TouchDesigner
+10:30 | A Simple Distributed Sandbox / How to think about SyncPlace holder
+11:30 | Handling Distributed Media Playback - A small example
+12:30 | Lunch
+13:30 | Handling Realtime Media Playback - A small example
+14:30 | Communication Architecture - Building our Essential Machine to Machine Plumbing
+15:30 | Controlling our Small Examples with our new Communication Structure
+16:00 | Q&A / Experimentation Time
 17:00 | Wrap
 
-### Day 2 - General Topic
+### Day 2 - Modular UI Strategies and Q&A
 Time | Topic
 ---- | ----
-10:00 | Place holder
-11:00 | Place holder
-12:00 | Place holder
-13:00 | Place holder
-14:00 | Place holder
-15:00 | Place holder
-16:00 | Place holder
+10:00 | Recap of Day 1
+10:15 | UI Design and Organization
+11:30 | UI Wrappers for our simple Examples
+12:30 | Lunch
+13:30 | Sequencing and Playing Content - Video and Realtime
+14:30 | Open QA and Case Studies Discussion
 17:00 | Wrap
 
 ## Overview
+### Day 1
+
+
+### Day 2
