@@ -7,6 +7,7 @@ class Com:
             message = {
                 'messagekind'	: ,
                 'target'		: ,
+                'targetOp'      : ,
                 'sender'		: ,
                 'output'		: ,
                 'pars'		    : ,

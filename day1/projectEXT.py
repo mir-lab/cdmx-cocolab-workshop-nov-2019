@@ -47,8 +47,6 @@ class Project:
         return par_dict
 
     def UpdateCustomPars(self, target_op, parsDict):
-        print(parsDict)
         for each_key, each_val in parsDict.items():
             setattr(target_op.par, each_key, each_val)
-        #target_op.pars(each_key)[0].val = each_val
         pass

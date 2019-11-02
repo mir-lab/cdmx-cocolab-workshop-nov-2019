@@ -18,11 +18,26 @@ class GeneralCom(com):
             pass
     
     def UpdateTargetBase(self, message):
+        '''
+        Exmample Message
+
+            message = {
+                'messagekind'	: 'UpdateTargetBase',
+                'target'        : None,
+                'targetOp'		: 'base_movie_player_msg_mode',
+                'sender'		: op.Project.Role.eval(),
+                'output'		: None,
+                'pars'		    : dictOfPars,
+                'value'			: None
+                }
+        '''
+
         role = op.Project.Role.eval() 
 
         if role == 'draw':
             targetOp    = op.Draw.op(message.get('targetOp'))
             parsDict    = message.get('pars')
+            print(targetOp)
             op.Project.UpdateCustomPars(targetOp, parsDict)
         
         else:
