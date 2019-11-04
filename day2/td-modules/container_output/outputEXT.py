@@ -5,19 +5,19 @@ class Output:
         print("Output init from {}".format(myOp))
     
     def OutputCleanup(self):
+        safeComps = ['base_scenes']
         oldOps = self.MyOp.findChildren(type=COMP, depth=1)
         for eachOp in oldOps:
-            eachOp.destroy()
+            if eachOp.name not in safeComps:
+                eachOp.destroy()
+            else:
+                pass
 
     def SetOutputSize(self):
-        # find all of our container COMPS
         outputComps = self.MyOp.findChildren(type=containerCOMP, depth=1)
-
-        # list comphrehensions for width and height
         width = [container.width for container in outputComps]
         height = [container.height for container in outputComps]
 
-        # set widths and heights
         op.Output.par.w = sum(width)
         op.Output.par.h = max(height)
 

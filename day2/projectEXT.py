@@ -34,6 +34,8 @@ class Project:
         self.ChangeBg(role)
         op('container_output').Setup(role)
 
+    def GetCurrentRole(self):
+        return self.Role.eval()
 
     def PageToDict(self, target_op, target_page, ignore_list):
         # create empty par_dict with input name as the preset_name value
@@ -50,4 +52,10 @@ class Project:
     def UpdateCustomPars(self, target_op, parsDict):
         for each_key, each_val in parsDict.items():
             setattr(target_op.par, each_key, each_val)
+        pass
+
+    def UpdateCustomInternalPars(self, target_op, parsDict):
+        targetiop = op( target_op.par.iop1.eval() )
+        for each_key, each_val in parsDict.items():
+            setattr(targetiop.par, each_key, each_val)
         pass
