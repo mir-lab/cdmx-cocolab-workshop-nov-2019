@@ -34,7 +34,7 @@ Before we meet there are a few things to make sure youâ€™ve got in place. Hereâ€
 Time | Topic
 ---- | ----
 10:00 | Context, Approach, and TouchDesigner
-10:30 | A Simple Distributed Sandbox / How to think about SyncPlace holder
+10:30 | A Simple Distributed Sandbox / How to think about Sync
 11:30 | Handling Distributed Media Playback - A small example
 12:30 | Lunch
 13:30 | Handling Realtime Media Playback - A small example
@@ -56,6 +56,15 @@ Time | Topic
 
 ## Overview
 ### Day 1
+Our first day is going to focus on the essential pieces of working with distributed systems. We'll look a the challenges in front of us, pull apart different types of sync, build a starting point sandbox, and then look at creating simple examples for synchronizing traditional media and real time media playback. These essential building blocks will be our foundational pieces for understanding how to address the challenges that come with building for systems that run across multiple severs. 
 
+Importantly, we'll take a naive approach to this work as we start, and then refactor over over the course of the day. This means that we'll look at brute force solutions first - how do we solve the problems in front of us, then think about more elegant and considered approaches that will make future development smoother and less frustrating. In other words, we'll do all of this the hard way first, then course correct with more thoughtful approaches. Why do that? Brute force methods are often helpful in a pinch - and we don't always have time for an elegant solution. 
+
+With any luck, by the end of the day we'll have written a communication framework that will serve as the backbone of our work on Day 2.
 
 ### Day 2
+We'll start the day with a recap of what we covered on Day 1. We'll then look at some approaches for simplifying how we can tackle UI building in TouchDesigner. You may want a custom design, or just want to use a simple parameter COMP - either of these are fine solutions, and we should ensure that consider this need as we develop a system. This will also open up opportunities for us to controll TouchDesigner with custom web based UIs, or other control systems. 
+
+Building from Day 1 we'll land on an approach that should provide for flexible control building that still follows a considered design pattern. 
+
+We'll end Day 2 with some discussion of approaches that have worked well, and those that have fallen short of being useful for reliable systems. 
