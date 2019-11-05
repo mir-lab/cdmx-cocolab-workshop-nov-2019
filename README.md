@@ -6,7 +6,7 @@ Zoe Sandoval | [zoesandoval.com](https://zoesandoval.com)
 Materializing Interactive Research | [mir.works](https://mir.works)
 
 ## Dependencies
-* [TouchDesigner099](https://www.derivative.ca/099/Downloads/)
+* [TouchDesigner099 2019.19160](https://derivative.ca/download/archive)
 
 ## Recommended Tools
 Having an external text editor is key to lots of work in Touch. I like VS Code these days, though Sublime is also a solid choice
